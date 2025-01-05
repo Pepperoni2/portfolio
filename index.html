@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfolio</title>
+    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="./stylesheets/styles.css">
 </head>
+
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html"><img class="logo" src="./images/icons/logo.png" alt="Portfolio Logo, contains the letter FG in a circle"></a>
+        <div class="nav-links">
+            <a href="#" id="active">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Skills</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
 
-        <header style="width: 100%; height: 80px; left: 0px; top: 0px; position: absolute; background: #052659">
-            <img style="width: 78px; height: 67px; left: 15px; top: 7px; position: absolute" src="https://via.placeholder.com/78x67" />
-            <nav style="width: 1007px; height: 34px; left: 479px; top: 20px; position: absolute">
-                <div style="left: 0px; top: 0px; position: absolute; ">Home</div>
-                <div style="left: 280px; top: 6px; position: absolute; ">About Me</div>
-                <div style="left: 633px; top: 6px; position: absolute; ">Skills</div>
-                <div style="left: 909px; top: 6px; position: absolute; ">Contact</div>
-            </nav>
-            <!-- border-bottom color of header-->
-            <div style="width: 100%; height: 0px; left: 0px; top: 80px; position: absolute; border: 2px #C1E8FF solid"></div>
-        </header>
-
-        
-        <main style="width: 100%; height: 100%; left: 168px; top: 218px; position: absolute">
-            <img src="https://via.placeholder.com/512x512" />
-            <div style="width: 935px; height: 106px; left: 656px; top: 342px; position: absolute; color: #7DA0CA; font-size: 20px; font-family: Arial; font-weight: 700; word-wrap: break-word">
-                Hi, I am an aspiring web developer with a passion for creating dynamic, user-friendly websites and applications. I am dedicated to continuous learning and excited to collaborate with clients to bring their ideas to life in the digital space.
+    <!-- Main Section -->
+    <main>
+        <div class="container">
+            <div class="profile-image">
+                <img src="./images/profile.jpg" alt="Profile Picture">
             </div>
-            <div>
+            <div class="info">
+                <h1 class="name">Florian Golubic</h1>
+                <h2 class="title">Full-stack Developer</h2>
+    
+                <div class="social-icons">
+                    <a href="https://x.com"><img src="./images/icons/Twitter.png"></a>
+                    <a href="https://pinterest.com"><img src="./images/icons/Pinterest.png"></a>
+                    <a href="https://www.instagram.com"><img src="./images/icons/Instagram.png"></a>
+                    <a href="https://www.linkedin.com/"><img src="./images/icons/LinkedIn.png"></a>
+                </div>
+                <p class="description">
+                    Hi, I am an aspiring web developer with a passion for creating dynamic, user-friendly websites and
+                    applications. I am dedicated to continuous learning and excited to collaborate with clients to bring
+                    their ideas to life in the digital space.
+                </p>
             </div>
-            <div style="width: 453px; height: 57px; left: 658px; top: 170px; position: absolute; color: #7DA0CA; font-size: 24px; font-family: Arial; font-weight: 700; word-wrap: break-word">Full-stack Developer</div>
-            <div style="width: 485px; height: 106px; left: 656px; top: 64px; position: absolute; color: #C1E8FF; font-size: 52px; font-family: Arial; font-weight: 700; letter-spacing: 5.20px; word-wrap: break-word">Florian Golubic</div>
-            
-            <!-- Button -->
-        </main>
-        
-        
-        
+        </div>
+        <a href="./pages/AboutMe.html" class="cta-button">Find out more</a>
+        <!-- Footer -->
         <footer>
-            <p>Copyright 2024 © All rights reserved</p>
-            <p>Designed by Florian Golubic</p>
+            Copyright 2024 © All rights reserved<span class="space-divider"></span>Designed by Florian Golubic
         </footer>
+    </main>
+
 </body>
+
 </html>
