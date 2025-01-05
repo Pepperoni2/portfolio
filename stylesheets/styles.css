@@ -3,14 +3,13 @@
 }
 
 
-html, body {
-    height: 100%;
+body {
     width: 100%;
     overflow-x: hidden;
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
     background-color: #021024;
-    color: #ffffff;
+    color: #C1E8FF;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,9 +19,9 @@ html, body {
 
 /* Navigation Bar */
 nav {
-    position: absolute;
-    margin: 0;
+    position: sticky;
     top: 0;
+    z-index: 100;
     width: 100%;
     background-color: #052659;
     display: flex;
@@ -64,7 +63,7 @@ nav .nav-links #active {
 }
 
 /* ---------------------------------------------------- */
-/* Main Section */
+/* Landing Page styling */
 .landing-container {
     width: 100%;
     display: flex;
@@ -106,7 +105,6 @@ nav .nav-links #active {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 20px;
     column-gap: 8rem;
 }
 .landing-container .name{
@@ -164,23 +162,105 @@ nav .nav-links #active {
     height: 0;
 }
 
+
+
+/* About Me Page styling */
 .about-container {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 40px 20px;
     margin: 0 10px;
-    text-align: left;
     flex-flow: column wrap;
+}
+.about-container .aboutMe{
+    text-align: center;
+    max-height: 90vh;
+}
+.aboutMe p{
+    padding-bottom: 100px;
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    text-wrap: wrap;
+    opacity: 80%;
+}
+
+.about-container h1{
+    padding: 50px;
+    font-size: 36px;
+}
+
+.about-container .aboutMe .cta-button{
+    background-color: rgba(193, 232, 255, 1);
+    opacity: 30%;
+    color: #021024;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-size: 1.8em;
+    cursor: not-allowed;
+    text-align: center;
+    text-decoration: none;
+}
+
+.about-container .EduAndExp{
+    padding-top: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+
+}
+.about-container .EduAndExp section{
+    width: 400px;
+    text-align: start;
+    text-wrap: wrap;
+}
+
+.about-container .EduAndExp .timeline-container{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 100px;
+}
+.timeline-container #red{
+    padding: 20px;
+    background-color: #A53E23;
+    color:white;
+    border-radius: 20px;
+    opacity: 80%;
+    font-size: 12px;
+}
+.timeline-container #blue{
+    padding: 20px;
+    background-color: #50A0FF;
+    color:white;
+    border-radius: 20px;
+    opacity: 80%;
+    font-size: 12px;
+
+}
+.timeline-container #green{
+    padding: 20px;
+    background-color: #3C8938;
+    color:white;
+    border-radius: 20px;
+    opacity: 80%;
+    font-size: 12px;
+}
+.timeline-container #green p{
+    vertical-align: middle;
 }
 
 /* ================================================ */
 /* Footer */
-footer {
+.absolute-footer{
     position: absolute;
-    bottom: 0px; 
+    bottom: 0;
+    left: 0;
+    z-index: 10; 
     width: 100%;
     background-color: #052659;
     padding: 20px;
@@ -188,7 +268,19 @@ footer {
     color: #7DA0CA;
     font-size: 0.875rem;
 }
-footer .space-divider {
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 10; 
+    width: 100%;
+    background-color: #052659;
+    padding: 20px;
+    text-align: center;
+    color: #7DA0CA;
+    font-size: 0.875rem;
+}
+.space-divider {
     padding-left: 100px;
     padding-right: 100px;
 }
