@@ -5,6 +5,7 @@
 
 body {
     width: 100%;
+    min-height: 100vh;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -65,7 +66,6 @@ nav .nav-links #active {
 /* ---------------------------------------------------- */
 /* Landing Page styling */
 .landing-container {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -333,13 +333,99 @@ nav .nav-links #active {
     border-radius: 15px;
     padding: 10px 55px;
 }
+/* =============================================== */
+/* Contact Page styling / layouting */
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    flex: 1;
+}
+  
+  /* Form styles */
+  .contact-form {
+    background-color: #274763; /* Slightly lighter blue */
+    padding: 30px;
+    margin: 50px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px 11px rgba(84, 131, 179, 0.20);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 30px;
+  }
+  
+  .form-input, .form-textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #C1E8FF;
+    color: #C1E8FF;
+    padding: 10px;
+    flex: 1;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .form-input::placeholder, .form-textarea::placeholder {
+    color: rgba(193, 232, 255, 0.50); /* Lighter placeholder color */
+  }
+  
+  .full-width {
+    flex: 1;
+  }
+  
+  .form-textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .form-button {
+    margin: 0 auto;
+    background-color: #C1E8FF;
+    color: #021024;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 20px 50px;
+  }
+  
+  .form-button:hover {
+    background-color: #7DA0CA;
+  }
 
+  .contact-container .social-icons {
+    display: flex;
+    gap: 30px;
+    justify-content: start;
+    margin-bottom: 30px;
+    align-content: center;
+}
+.contact-container .social-icons img {
+    width: auto;
+    height: 25px;
+}
+
+.contact-container .social-icons a {
+    color: #7DA0CA;
+    text-decoration: none;
+}
 
 
 /* ================================================ */
 /* Footer */
-.absolute-footer{
-    position: absolute;
+.fixed-footer{
+    position: fixed;
     bottom: 0;
     left: 0;
     z-index: 10; 
