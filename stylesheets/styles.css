@@ -27,7 +27,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 10px 20px;
+    padding: 0px 10px;
     box-sizing: border-box;
     border-bottom: 1px solid #C1E8FF;
 }
@@ -253,6 +253,88 @@ nav .nav-links #active {
 .timeline-container #green p{
     vertical-align: middle;
 }
+/* ================================================ */
+/* Skill Page styling, layouting*/
+.skill-container{
+    display: flex;
+    flex-direction: column;
+}
+.skill-container h1{
+    padding: 50px;
+    flex-basis: 100%;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+.skill-container section{
+    height: 500px;
+    width: 300px;
+    text-align: center;
+    margin: 50px;
+}
+.skill-container section p{
+    font-size: 12px;
+}
+.skill-container section h2{
+    padding-top: 20px;
+}
+
+.skill-layout{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 200px;
+}
+
+.skill-level{
+    position: absolute;
+    right: 0px;
+    top: 85%;
+    z-index: 2;
+    padding: 10px 30px;
+    color: white;
+    background-color: green;
+    width: auto;
+    float: right;
+}
+.imageBox{
+    position: relative;
+}
+
+#html{
+    background-color: rgba(255, 108, 57, 0.6);
+    border: 4px solid rgba(228, 77, 38, 1);
+    border-radius: 15px;
+}
+#css{
+    background-color: rgba(52, 125, 198, 0.6);
+    border: 4px solid rgba(31, 98, 174, 1);
+    border-radius: 15px;
+}
+#js{
+    background-color: rgba(247, 224, 29, 0.6);
+    border: 4px solid rgba(247, 224, 29, 1);
+    border-radius: 15px;
+}
+#nodejs{
+    background-color: rgba(110, 188, 71, 0.6);
+    border: 4px solid rgba(60, 137, 56, 1);
+    border-radius: 15px;
+}
+#vuejs{
+    background-color: rgba(64, 184, 132, 0.6);
+    border: 4px solid rgba(50, 74, 91, 1);
+    border-radius: 15px;
+}
+#laravel{
+    background-color: rgba(18, 20, 28, 0.6);
+    border: 4px solid rgba(255, 45, 32, 1);
+    border-radius: 15px;
+    padding: 10px 55px;
+}
+
+
 
 /* ================================================ */
 /* Footer */
