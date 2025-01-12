@@ -7,22 +7,38 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="./stylesheets/styles.css">
     <link rel="icon" href="./images/icons/logo.png">
+    <script src="./scripts/script.js"></script>
 </head>
 
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <a href="index.html"><img class="logo" src="./images/icons/logo.png" alt="Portfolio Logo, contains the letter FG in a circle"></a>
-        <div class="nav-links">
-            <a href="index.html" id="active">Home</a>
-            <a href="./pages/AboutMe.html">About Me</a>
-            <a href="./pages/skills.html">Skills</a>
-            <a href="./pages/contact.html">Contact</a>
+        <a href="index.html"><img class="logo" src="./images/icons/logo.png"
+                alt="Portfolio Logo, contains the letter FG in a circle"></a>
+        <ul class="nav-links">
+            <div class="nav-container">
+                <div class="logo-container"><a href="index.html"><img class="logo"
+                            src="./images/icons/logo_inverted.png"
+                            alt="Portfolio Logo, contains the letter FG in a circle"></a></div>
+                <li><a href="index.html" id="active"><img src="./images/icons/home.svg" height="30px" width="30px"
+                            alt="">Home</a></li>
+                <li><a href="./pages/AboutMe.html"><img src="./images/icons/info.svg" alt="" height="30px"
+                            width="30px">About Me</a></li>
+                <li><a href="./pages/skills.html"><img src="./images/icons/code.svg" alt="" height="30px"
+                            width="30px">Skills</a></li>
+                <li><a href="./pages/contact.html"><img src="./images/icons/contact.svg" alt="" height="30px"
+                            width="30px">Contact</a></li>
+            </div>
+        </ul>
+        <div class="burger" onclick="nav()">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
         </div>
     </nav>
 
     <!-- Main Section -->
-    <main class="landing-container">
+    <main name="main" class="landing-container">
         <div class="container">
             <div class="profile-image">
                 <img src="./images/profile.jpg" alt="Profile Picture">
@@ -30,11 +46,12 @@
             <div class="info">
                 <h1 class="name">Florian Golubic</h1>
                 <h2 class="title">Full-stack Developer</h2>
-    
+
                 <div class="social-icons">
                     <a href="https://x.com"><img src="./images/icons/Twitter.png" alt="X Logo"></a>
                     <a href="https://pinterest.com"><img src="./images/icons/Pinterest.png" alt="Pinterest Logo"></a>
-                    <a href="https://www.instagram.com"><img src="./images/icons/Instagram.png" alt="Instagram Logo"></a>
+                    <a href="https://www.instagram.com"><img src="./images/icons/Instagram.png"
+                            alt="Instagram Logo"></a>
                     <a href="https://www.linkedin.com/"><img src="./images/icons/LinkedIn.png" alt="LinkedIn Logo"></a>
                 </div>
                 <p class="description">
@@ -47,10 +64,10 @@
         <a href="./pages/AboutMe.html" class="cta-button">Find out more</a>
 
     </main>
-        <!-- Footer -->
-        <footer class="fixed-footer">
-            Copyright 2024 © All rights reserved<span class="space-divider"></span>Designed by Florian Golubic
-        </footer>
+    <!-- Footer -->
+    <footer class="fixed-footer">
+        Copyright 2024 © All rights reserved<span class="space-divider"></span>Designed by Florian Golubic
+    </footer>
 </body>
 
 </html>
