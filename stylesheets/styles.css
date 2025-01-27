@@ -84,6 +84,7 @@ nav .nav-links .nav-container #active {
 }
 nav .logo-container{
     display: none;
+    padding-bottom: 5px;
 }
 
 /* Mobile Nav*/
@@ -194,10 +195,10 @@ main.darken {
     height: auto;
     border-radius: 50%;
     overflow: hidden;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
     flex-shrink: 1;
     margin-right: 3rem;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     box-shadow: 5px 5px 10px 9px black;
 }
 
@@ -278,6 +279,14 @@ main.darken {
     .landing-container .container{
         display: flex;
         flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .landing-container .container .info .social-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -582,6 +591,18 @@ main.darken {
 
 footer {
     position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: #052659;
+    padding: 20px;
+    text-align: center;
+    color: #7DA0CA;
+    font-size: 0.875rem;
+}
+.absolute-footer{
+    position: absolute;
     bottom: 0;
     left: 0;
     z-index: 10;
