@@ -12,33 +12,50 @@
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <a href="index.html"><img class="logo" src="./images/icons/logo.png"
-                alt="Portfolio Logo, contains the letter FG in a circle"></a>
+    <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="logo-link">
+            <img class="logo" src="./images/icons/logo.png" alt="Portfolio Logo, contains the letter FG in a circle">
+        </a>
         <ul class="nav-links">
-            <div class="nav-container">
-                <div class="logo-container"><a href="index.html"><img class="logo"
-                            src="./images/icons/logo_inverted.png"
-                            alt="Portfolio Logo, contains the letter FG in a circle"></a></div>
-                <li><a href="index.html" id="active"><img src="./images/icons/home.svg" height="30px" width="30px"
-                            alt="">Home</a></li>
-                <li><a href="./pages/AboutMe.html"><img src="./images/icons/info.svg" alt="" height="30px"
-                            width="30px">About Me</a></li>
-                <li><a href="./pages/skills.html"><img src="./images/icons/code.svg" alt="" height="30px"
-                            width="30px">Skills</a></li>
-                <li><a href="./pages/contact.html"><img src="./images/icons/contact.svg" alt="" height="30px"
-                            width="30px">Contact</a></li>
-            </div>
+            <li class="nav-container">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img class="logo" src="./images/icons/logo_inverted.png" alt="Portfolio Logo, contains the letter FG in a circle">
+                    </a>
+                </div>
+                <ul class="nav-items">
+                    <li>
+                        <a href="index.html" id="active">
+                            <img src="./images/icons/home.svg" height="30" width="30" alt="Home Icon">Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/AboutMe.html">
+                            <img src="./images/icons/info.svg" height="30" width="30" alt="About Me Icon">About Me
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/skills.html">
+                            <img src="./images/icons/code.svg" height="30" width="30" alt="Skills Icon">Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/contact.html">
+                            <img src="./images/icons/contact.svg" height="30" width="30" alt="Contact Icon">Contact
+                        </a>
+                    </li>
+                </ul>
+            </li>
         </ul>
-        <div class="burger" onclick="nav()">
-            <div class="line line1"></div>
-            <div class="line line2"></div>
-            <div class="line line3"></div>
-        </div>
+        <button class="burger" onclick="nav()">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </button>
     </nav>
 
     <!-- Main Section -->
-    <main name="main" class="landing-container">
+    <main class="landing-container">
         <div class="container">
             <div class="profile-image">
                 <img src="./images/profile.jpg" alt="Profile Picture">
